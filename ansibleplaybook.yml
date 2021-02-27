@@ -1,0 +1,12 @@
+---
+- name: Creating users on managed nodes
+  hosts: all
+  tasks:
+   - name: Create user
+     user:
+      name: Anu
+      password: admin
+      uid: 1299
+      home: /home/Anu
+      shell: /bin/bash
+...

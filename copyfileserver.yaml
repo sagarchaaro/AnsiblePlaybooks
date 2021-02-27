@@ -1,0 +1,10 @@
+---
+- name: Copy files from one managed node to another
+  hosts: 172.31.36.94
+  tasks: 
+   - name: fetch the hello.txt file from server1
+     fetch: 
+      src: Hello.txt
+      dest: /tmp
+...
+

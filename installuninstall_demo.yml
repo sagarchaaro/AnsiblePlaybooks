@@ -1,0 +1,10 @@
+---
+- name: Install s/w and Uninstall s/w from the controller
+  hosts: all
+  tasks: 
+   - name: Install and uninstall the softwares
+     apt: 
+      name: "{{a}}"
+      state: "{{b}}"
+      update_cache: "{{c}}"
+...
